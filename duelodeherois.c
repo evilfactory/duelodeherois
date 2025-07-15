@@ -68,6 +68,13 @@ int main()
 
     cadastrarHerois(herois, 2);
 
+    if (herois[0].ataque <= herois[1].defesa && herois[1].ataque <= herois[0].defesa)
+    {
+        printf("Os herois batalharao para sempre\n");
+
+        return 0;
+    }
+
     int vez = 0;
     while (1)
     {
@@ -82,6 +89,8 @@ int main()
 
             break;
         }
+
+        printf("\n");
 
         vez = 1 - vez;
     }
