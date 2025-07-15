@@ -77,8 +77,8 @@ int main()
 
         if (verificarDerrota(herois, 1 - vez))
         {
-            printf("%s morreu\n", herois[vez].nome);
-            printf("%s eh o ganhador!\n", herois[1 - vez].nome);
+            printf("%s morreu\n", herois[1 - vez].nome);
+            printf("%s eh o ganhador!\n", herois[vez].nome);
 
             break;
         }
